@@ -6,58 +6,112 @@ import PricingCard from "@components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "BRANDING",
+    price: "R$197",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Setup de domínio",
+      "Setup de DNS",
+      "Certificado SSL",
+      "Site institucional",
+      "Página de vendas",
+      "Redes sociais",
     ],
     button: {
-      text: "Get Started",
+      text: "",
       link: "/",
     },
   },
   {
-    name: "Startup",
+    name: "GESTÃO DE TRÁFEGO",
     price: {
-      monthly: "$19",
-      annual: "$16",
+      monthly: "R$439",
+      annual: "R$16",
       discount: "10%",
-      original: "$24",
+      original: "R$699",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "Setup de campanha",
+      "Definição de público",
+      "Produção de criativos",
+      "Edição de vídeo",
+      "Mensuração e análise",
+      "Remarketing",
+      "Google Ads",
+      "Facebook Ads",
+      "Testes A/B",
     ],
     button: {
-      text: "Get Started",
+      text: "",
       link: "#",
     },
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "PRODUCT DESIGN",
+    price: {
+      monthly: "R$697",
+      annual: "R$7.527",
+      discount: "10%",
+      original: "R$899",
+    },
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Discovery",
+      "Análise heurística",
+      "Pesquisa",
+      "Jornada do usuário",
+      "UX & UI Design",
+      "Testes de usabilidade",
+      "Análise de dados",
     ],
     button: {
-      text: "Contact us",
+      text: "",
+      link: "#",
+    },
+  },
+  {
+    name: "WEB3",
+    price: {
+      monthly: "CONSULTE",
+      annual: "",
+      discount: "",
+      original: "",
+    },
+    popular: false,
+    features: [
+      "Setup de marketplace",
+      "Design de ativos",
+      "Smart contracts",
+      "Respositórios git",
+      "Landing page",
+      "Criação de comunidade",
+      "Whitepapers",
+    ],
+    button: {
+      text: "Solicitar orçamento",
+      link: "#",
+    },
+  },
+  {
+    name: "PERSONALIZADO",
+    price: "CONSULTE",
+    popular: false,
+    features: [
+      "Companhas personalizadas",
+      "Nutrição de Leads",
+      "Setup de loja",
+      "Personalização de loja",
+      "Criação de conteúdo",
+      "E-mail marketing",
+      "Gestão de tráfego",
+      "Criação de comunidades",
+      "Inbound Marketing",
+      "Marketing de conteúdo",
+
+    ],
+    button: {
+      text: "Solicitar orçamento",
       link: "/contact",
     },
   },
@@ -67,13 +121,13 @@ const pricing = [
 <Layout title="Pricing">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">Serviços</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Pacotes de serviços por assinatura. Sem surpresas.
       </Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+    <div class="grid md:grid-cols-3 gap-8 mx-auto max-w-screen-lg mt-12">
       {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
   </Container>
