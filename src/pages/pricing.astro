@@ -7,7 +7,10 @@ import PricingCard from "@components/pricing.astro";
 const pricing = [
   {
     name: "BRANDING",
-    price: "R$197",
+    price: {
+    // monthly: "Consulte",
+    // original: "R$699",
+  },
     popular: false,
     features: [
       "Setup de domínio",
@@ -16,19 +19,20 @@ const pricing = [
       "Site institucional",
       "Página de vendas",
       "Redes sociais",
+      "Produção de conteúdo"
     ],
     button: {
       text: "",
-      link: "/",
+      link: "/contact",
     },
   },
   {
     name: "GESTÃO DE TRÁFEGO",
     price: {
-      monthly: "R$439",
+      // monthly: "R$839",
       annual: "R$16.000",
       discount: "10%",
-      original: "R$699",
+      // original: "R$1299",
     },
     popular: true,
     features: [
@@ -50,10 +54,10 @@ const pricing = [
   {
     name: "PRODUCT DESIGN",
     price: {
-      monthly: "R$697",
+      // monthly: "R$ 5.899",
       annual: "R$27.527",
       discount: "10%",
-      original: "R$899",
+      // original: "R$4.699",
     },
     popular: false,
     features: [
